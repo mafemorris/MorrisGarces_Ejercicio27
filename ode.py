@@ -19,11 +19,11 @@ t = [t0+h*i for i in range(pasos) ]
 figure(figsize=(10,10))
 subplot(3,2,1)
 plot(t,euler01)
-title("Metodo por Euler 01")
+title("Metodo por Euler 0.1")
 
 subplot(3,2,2)
 plot(t,implicita01)
-title("Metodo por Implicita 01")
+title("Metodo por Implicita 0.1")
 
 h=0.01
 pasos= int((tf - t0)/h)
@@ -31,11 +31,11 @@ t = [t0+h*i for i in range(pasos) ]
 
 subplot(3,2,3)
 plot(t,euler001)
-title("Metodo por Euler 001")
+title("Metodo por Euler 0.01")
 
 subplot(3,2,4)
 plot(t,implicita001)
-title("Metodo por Implicita 001")
+title("Metodo por Implicita 0.01")
 
 h=1
 pasos= int((tf - t0)/h)

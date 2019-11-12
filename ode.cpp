@@ -29,8 +29,8 @@ int main(){
     float tf=4/w;
     int pasos;
 
-    int num = 3;
-    float deltat[3] = {0.1, 0.01, 1};
+    
+    float deltat[3] = {0.1, 1, 10};
     string eulernombres[3] = {"euler01.txt", "euler001.txt", "euler1.txt"};
     string implicitanombres[3] = {"imp01.txt", "imp001.txt", "imp1.txt"};
 

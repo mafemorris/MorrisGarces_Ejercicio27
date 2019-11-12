@@ -12,6 +12,8 @@ implicita1 = loadtxt("imp1.txt")
 w=0.1
 t0=0
 tf=4/w
+
+
 h=0.1
 pasos= int((tf - t0)/h)
 t = [t0+h*i for i in range(pasos) ]
@@ -25,7 +27,7 @@ subplot(3,2,2)
 plot(t,implicita01)
 title("Metodo por Implicita 0.1")
 
-h=0.01
+h=1
 pasos= int((tf - t0)/h)
 t = [t0+h*i for i in range(pasos) ]
 
@@ -37,7 +39,7 @@ subplot(3,2,4)
 plot(t,implicita001)
 title("Metodo por Implicita 0.01")
 
-h=1
+h=10
 pasos= int((tf - t0)/h)
 t = [t0+h*i for i in range(pasos) ]
 
